@@ -135,6 +135,7 @@ public class FakeBar {
 
         System.out.println("First Weighing is:  " + driver.findElement(By.cssSelector("div li:nth-child(1)")).getText());
         System.out.println("Second Weighing is: " + driver.findElement(By.cssSelector("div li:nth-child(2)")).getText());
+        System.out.println("The Fake Gold Coin is: " + driver.findElement(By.cssSelector("div.coins button[id$='" + fakeGoldBar +"']")).getText());
         System.out.println("Total number of Weighings made: " + noOfWeighings);
 
         driver.quit();
